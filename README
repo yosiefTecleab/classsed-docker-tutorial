@@ -1,0 +1,21 @@
+YOUTUBE LINK
+https://www.youtube.com/watch?v=Dm0CmZz-QyI
+
+.... the done branch is the final version
+
+....execute js inside container
+docker exec workspace-server-1 npm run migrate
+
+docker exec workspace-server-1 npm run seed
+
+
+docker exec -it workspace-db-1 psql -U docker
+
+....not working run postgres from installed in
+psql -p 4321 -d docker -U docker
+
+.....
+curl localhost:5000/ users  
+curl -X POST -d 'name=yosief' localhost:5000/users
+
+curl localhost:5000/users
